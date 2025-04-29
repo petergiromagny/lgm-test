@@ -9,6 +9,8 @@
 import type {TextNode} from 'lexical';
 import type {JSX} from 'react';
 
+import './index.css';
+
 import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
 import {useLexicalTextEntity} from '@lexical/react/useLexicalTextEntity';
 import {EntityMatch} from '@lexical/text';

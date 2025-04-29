@@ -1,0 +1,12 @@
+.spin {
+  text-decoration: underline;
+}
+
+.spin:hover {
+  text-decoration: none;
+}
+
+.spin:hover ~ .spin,
+.spin:hover + .spin {
+  text-decoration: underline;
+}
