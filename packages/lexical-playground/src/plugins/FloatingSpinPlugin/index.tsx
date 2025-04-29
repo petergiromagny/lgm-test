@@ -83,7 +83,17 @@ export default function FloatingSpinPlugin({
     );
   }, [editor]);
 
-  return showFloatingSpin
-    ? createPortal(<FloatingSpin spinElement={spinElement} />, anchorElem)
-    : null;
+  return (
+    <>
+      {showFloatingSpin &&
+        createPortal(<FloatingSpin spinElement={spinElement} />, anchorElem)}
+      {showFloatingSpin &&
+        createPortal(
+          <div className="floating-spin-dom">
+            oh oh oh, tu as ouvert un tooltip
+          </div>,
+          document.body,
+        )}
+    </>
+  );
 }
