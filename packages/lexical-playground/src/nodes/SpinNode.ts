@@ -27,7 +27,6 @@ export class SpinNode extends TextNode {
 
   createDOM(config: EditorConfig): HTMLElement {
     const dom = super.createDOM(config);
-    dom.style.cursor = 'default';
     dom.style.color = 'red';
     dom.className = 'spin';
     return dom;
@@ -50,6 +49,8 @@ export function $createSpinNode(spin: string = ''): SpinNode {
   return $applyNodeReplacement(new SpinNode(spin));
 }
 
-export function $isSpinNode(node: LexicalNode | null | undefined): boolean {
+export function $isSpinNode(
+  node: LexicalNode | null | undefined,
+): node is SpinNode {
   return node instanceof SpinNode;
 }

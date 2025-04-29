@@ -51,6 +51,7 @@ import EquationsPlugin from './plugins/EquationsPlugin';
 import ExcalidrawPlugin from './plugins/ExcalidrawPlugin';
 import FigmaPlugin from './plugins/FigmaPlugin';
 import FloatingLinkEditorPlugin from './plugins/FloatingLinkEditorPlugin';
+import FloatingSpinPlugin from './plugins/FloatingSpinPlugin';
 import FloatingTextFormatToolbarPlugin from './plugins/FloatingTextFormatToolbarPlugin';
 import ImagesPlugin from './plugins/ImagesPlugin';
 import InlineImagePlugin from './plugins/InlineImagePlugin';
@@ -174,6 +175,7 @@ export default function Editor(): JSX.Element {
         <HashtagPlugin />
         <KeywordsPlugin />
         <SpinsPlugin />
+        <FloatingSpinPlugin />
         <SpeechToTextPlugin />
         <AutoLinkPlugin />
         <CommentPlugin
